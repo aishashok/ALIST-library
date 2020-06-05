@@ -19,7 +19,7 @@ An example code to read in the models using Python:
 
 sspgrid = Table.read('ALIST_padova_may2020.fits')
 ssp_spec = fits.open('ALIST_padova_may2020.fits')[2].data
-age, feh, afe = 10, 0.0, 0.0 ##Models you want to get
+age, feh, afe = 10, 0.0, 0.0
 model_id = np.where((sspgrid['AGE'] == age) & (sspgrid['FE_H'] == feh) & (sspgrid['A_FE'] == afe))[0]
 model_spec = ssp_spec[model_id][0]
 
