@@ -6,7 +6,8 @@ The files conatining the SSP templates are:
 
 Filename: ALIST_padova_may2020.fits
 Data Model:
-HDU1 = Table containing the age, metallicity and alpha abundance and luminosity of the models
+HDU1 = Table containing the age, metallicity and alpha abundance and luminosity of the models.
+
 HDU2 = Array (NX8575) of all Padova-based models.
 
 (To be uploaded):
@@ -16,7 +17,6 @@ HDU1 = Table containing the age, metallicity and alpha abundance and luminosity 
 HDU2 = Array (NX8575) of all Padova-based models.
 
 An example code to read in the models using Python:
-
 sspgrid = Table.read('ALIST_padova_may2020.fits')
 ssp_spec = fits.open('ALIST_padova_may2020.fits')[2].data
 age, feh, afe = 10, 0.0, 0.0
