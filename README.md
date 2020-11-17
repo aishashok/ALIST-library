@@ -39,8 +39,8 @@ Each .fits file contains the following:
 
 HDU1: Table containing the parameters of the models. 
 
-HDU2: The model Spectra (shape of this array is 4D matrix--Age, metallicity, alpha-abundance, no.of pixels)
+HDU2: The model Spectra (shape of this array is no. of models X no.of pixels)
 
-HDU3: The Variance spectra (4D matrix)
+HDU3: The Variance spectra (same shape as the model spectra)
 
 A sample code to read in a spectral model is provided here: [ALIST_read](alist_call.py)
