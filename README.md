@@ -1,23 +1,11 @@
 # ALIST-library of spectral templates.
-
-
 Using the SDSS-IV/APOGEE stars from the latest (incremental) DR16 data, we create a new empirical stellar library to generate a new high-resolution, NIR SSP spectral model library.
 
 We provide these SSP spectral models based on 2 isochrones: Padova and MIST models.
 
 More information on these models are provided in our paper: Ashok et al. 2020 (submitted)
 
-# Access to A-LIST
-The A-LIST spectral models are available for download as ".fits" files based on both the isochrones labeled: 'ALIST_Padova.fits' for the Padova-based and 'ALIST_MIST.fits' for the MIST-based models. 
-
-Each .fits file contains the following:
-
-HDU1: Table containing the parameters of the models. 
-
-HDU2: The model Spectra (shape of this array is 4D matrix--Age, metallicity, alpha-abundance, no.of pixels)
-
-HDU3: The Variance spectra (4D matrix)
-
+# A-LIST models information
 The Spectral models are available in :
 
 age (Gyr) = 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
@@ -45,3 +33,14 @@ The columns available in the table are:
 ['calc_AM'] = The mean alpha-abundance calculated based on the APOGEE stars in the SSP model (For more info, refer Section 4.1.3 in the paper)
     
 # Getting Started
+The A-LIST spectral models are available for download as ".fits" files based on both the isochrones labeled: 'ALIST_Padova.fits' for the Padova-based and 'ALIST_MIST.fits' for the MIST-based models. 
+
+Each .fits file contains the following:
+
+HDU1: Table containing the parameters of the models. 
+
+HDU2: The model Spectra (shape of this array is 4D matrix--Age, metallicity, alpha-abundance, no.of pixels)
+
+HDU3: The Variance spectra (4D matrix)
+
+A sample code to read in a spectral model is provided in the file: [a relative link](alist_call.py)
