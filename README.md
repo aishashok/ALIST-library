@@ -1,8 +1,10 @@
 # ALIST-library of spectral templates.
 
 
-Using the SDSS-IV/APOGEE stars from the latest (incremental) DR16 data, we create a new empirical stellar library to generate a new high-resolution, NIR SSP spectral model library. \\ 
+Using the SDSS-IV/APOGEE stars from the latest (incremental) DR16 data, we create a new empirical stellar library to generate a new high-resolution, NIR SSP spectral model library.
+
 We provide these SSP spectral models based on 2 isochrones: Padova and MIST models.
+
 More information on these models are provided in our paper: Ashok et al. 2020 (submitted)
 
 # Access to A-LIST
@@ -12,7 +14,7 @@ HDU2: The model Spectra (shape of this array is 4D matrix--Age, metallicity, alp
 HDU3: The Variance spectra (4D matrix)
 
 The Spectral models are available in :
-age (Gyr) = 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
+age (Gyr) = 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
 [M/H] (dex) = -2.2, -1.9, -1.6, -1.3, -1.0, 1-0.8, -0.6, -0.4, -0.2, 0.0, 0.2, 0.4
 [alpha/M] (dex) = -0.2, -0.1, 0.0, 0.1, 0.2, 0.3, 0.4
 
