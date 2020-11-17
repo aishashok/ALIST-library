@@ -43,4 +43,4 @@ HDU2: The model Spectra (shape of this array is no. of models X no.of pixels)
 
 HDU3: The Variance spectra (same shape as the model spectra)
 
-A sample code to read in a spectral model is provided here: [ALIST_read](alist_call.py)
+A sample code to read in a spectral model is provided here: [alist_call.py](alist_call.py)
