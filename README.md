@@ -43,4 +43,4 @@ HDU2: The model Spectra (shape of this array is 4D matrix--Age, metallicity, alp
 
 HDU3: The Variance spectra (4D matrix)
 
-A sample code to read in a spectral model is provided in the file: [a relative link](alist_call.py)
+A sample code to read in a spectral model is provided here: [ALIST_read](alist_call.py)
