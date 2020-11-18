@@ -41,8 +41,13 @@ HDU1: Table containing the parameters of the models.
 
 HDU2: The model Spectra (shape of this array is no. of models X no.of pixels)
 
-HDU3: The Variance spectra (same shape as the model spectra)
 
-**The Variance spectra provided is not the uncertainty/error spectra. It gives the scatter in flux per pixel of all the stellar spectra used to create the model (see Section 4 in the paper).
+We also provide the Variance spectra for each of our spectral models available as 'ALIST_Padova_variance.fits' and 'ALIST_MIST_variance.fits' which contains:
+
+HDU1: Table with model parameters
+
+HDU2: Variance spectra for spectral models. The size and shape of this array is the same as the spectral models.
+
+**The Variance spectra provided is not the uncertainty/error spectra. It simply gives the scatter in flux per pixel of all the stellar spectra used to create the model (see Section 4 in the paper).
 
 A sample code to read in a spectral model is provided here: [alist_call.py](alist_call.py)
