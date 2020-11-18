@@ -43,4 +43,6 @@ HDU2: The model Spectra (shape of this array is no. of models X no.of pixels)
 
 HDU3: The Variance spectra (same shape as the model spectra)
 
+**The Variance spectra provided is not the uncertainty/error spectra. It gives the scatter in flux per pixel of all the stellar spectra used to create the model (See section 4 in Ashok et al.2020)
+
 A sample code to read in a spectral model is provided here: [alist_call.py](alist_call.py)
