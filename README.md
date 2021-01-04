@@ -3,7 +3,7 @@ Using the SDSS-IV/APOGEE stars from the latest (incremental) DR16 data, we creat
 
 We provide these SSP spectral models based on 2 isochrones: Padova and MIST models.
 
-More information on these models are provided in our paper: Ashok et al. 2020 (submitted)
+More information on these models are provided in our paper: [Ashok et al. 2020](https://arxiv.org/abs/2012.15773)
 
 # A-LIST models information
 The Spectral models are available in :
