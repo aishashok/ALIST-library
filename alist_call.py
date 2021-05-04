@@ -8,7 +8,7 @@ from astropy.io import fits #(version: 4.0.1.post1)
 ##Here we are using astropy package in python (version 4.0.1.post1) . 
 sspgrid = Table.read('ALIST_Padova.fits') ##Contains the table
 ssp_spec = fits.open('ALIST_Padova.fits')[2].data ## contains the spectral models
-ssp_spec_uncert = fits.open('ALIST_Padova.fits')[3].data ##contains the uncertainty spectra for each model
+ssp_spec_var = fits.open('ALIST_Padova_variance.fits')[2].data ##contains the variance spectra for each model
 
 ##Selecting the models based on the quality cuts:
 ixs_quality = np.where((sspgrid['lumfrac'] > 0.32) & (sspgrid['deltatemp'] > -200) & (sspgrid['deltatemp'] < 350))[0]
